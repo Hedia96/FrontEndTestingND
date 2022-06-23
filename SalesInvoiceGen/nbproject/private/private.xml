@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/model/InvHeaderTableModel.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/model/InvLineTableModel.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/view/SigFrame.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/view/NewLineDialog.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/model/InvoiceHeader.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/control/InvActionListeners.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/model/FilesOperation.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/control/SelectListeners.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/view/NewHeaderDialog.java</file>
+            <file>file:/E:/FrontEndTesting/Sales%20Invoice%20Generator/SalesInvoiceGen/src/sig/model/InvoiceLine.java</file>
+        </group>
+    </open-files>
+</project-private>
