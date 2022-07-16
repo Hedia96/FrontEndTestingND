@@ -1,0 +1,2 @@
+file:src/main/resources/features/F06_Homeslider.feature:3:7
+file:src/main/resources/features/F07_FollowUs.feature:15

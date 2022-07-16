@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="17" time="189.965">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="11.353">
+        <system-out><![CDATA[Given user go to register page..............................................passed
+When Entering username"Ayah" and Lastname"Hedya"and Email "yoyohedia7@gmail.com".passed
+And Enter"P@ssw0rd"as Password and its confirmation.........................passed
+And Click on Register button................................................passed
+Then Display the registration success message...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could login with registered account using email and password" name="users could login with valid data successfully" time="11.272">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When Entering registered email "yoyohedia6@gmail.com"and Password "P@ssw0rd".passed
+And click on the login Button...............................................passed
+Then refer to the page and My account appears on the left top of the page...passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F03_ChangeCurrency | user changes currency from US to Euro and vice versa" name="user after login successfully could change currency from US to Euro and vice versa" time="10.776">
+        <system-out><![CDATA[Given click on the left top tab on the page.................................passed
+When select the needed currency"Euro".......................................passed
+Then check the selected currency reflected in the shown products............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_search |user search by product name or SKU" name="user search by product name like 'book' ,'laptop' or 'nike'" time="7.947">
+        <system-out><![CDATA[Given user enter "book" of the product......................................passed
+When click on search button.................................................passed
+Then check the search result includes"book".................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_search |user search by product name or SKU" name="user search by product name like 'book' ,'laptop' or 'nike' 2" time="10.113">
+        <system-out><![CDATA[Given user enter "laptop" of the product....................................passed
+When click on search button.................................................passed
+Then check the search result includes"laptop"...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_search |user search by product name or SKU" name="user search by product name like 'book' ,'laptop' or 'nike' 3" time="21.584">
+        <system-out><![CDATA[Given user enter "nike" of the product......................................passed
+When click on search button.................................................passed
+Then check the search result includes"nike".................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_search |user search by product name or SKU" name="user search by entering  SKU code ex: SCI_FAITH, APPLE_CAM, SF_PRO_11" time="9.356">
+        <system-out><![CDATA[Given user enter "SCI_FAITH" of the product.................................passed
+When click on search button.................................................passed
+Then check the search result includes"SCI_FAITH"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_search |user search by product name or SKU" name="user search by entering  SKU code ex: SCI_FAITH, APPLE_CAM, SF_PRO_11 2" time="9.427">
+        <system-out><![CDATA[Given user enter "APPLE_CAM" of the product.................................passed
+When click on search button.................................................passed
+Then check the search result includes"APPLE_CAM"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_search |user search by product name or SKU" name="user search by entering  SKU code ex: SCI_FAITH, APPLE_CAM, SF_PRO_11 3" time="10.72">
+        <system-out><![CDATA[Given user enter "SF_PRO_11" of the product.................................passed
+When click on search button.................................................passed
+Then check the search result includes"SF_PRO_11"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F05_HoverCateogry" name="hover then select any of the sub categories from the dynamic list" time="21.535">
+        <system-out><![CDATA[Given Hover on the one of main categories...................................passed
+When select one of sub categories...........................................passed
+Then check the page title same as the text of selected sub category.........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F06_Homeslider | user click on the slider ,slider shall refer to another link" name="user click on the slider nokia ,slider shall refer to another link" time="11.014">
+        <failure message="Clicking on nokia slider doesn't refer probably as expected  expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When click on the slider"nokia".............................................passed
+Then check the current url after"nokia"slider...............................failed
+
+StackTrace:
+java.lang.AssertionError: Clicking on nokia slider doesn't refer probably as expected  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.example.stepDefs.D06_homeSlidersStepDef.checkSliderRefURL(D06_homeSlidersStepDef.java:55)
+	at ✽.check the current url after"nokia"slider(file:///E:/FrontEndTesting/Java%20Projects/demonopcommerce/src/main/resources/features/F06_Homeslider.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="F06_Homeslider | user click on the slider ,slider shall refer to another link" name="user click on the slider iphone  ,slider shall refer to another link" time="7.323">
+        <failure message="Clicking on nokia slider doesn't refer probably as expected  expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When click on the slider"iphone"............................................passed
+Then check the current url after"iphone"slider..............................failed
+
+StackTrace:
+java.lang.AssertionError: Clicking on nokia slider doesn't refer probably as expected  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.example.stepDefs.D06_homeSlidersStepDef.checkSliderRefURL(D06_homeSlidersStepDef.java:58)
+	at ✽.check the current url after"iphone"slider(file:///E:/FrontEndTesting/Java%20Projects/demonopcommerce/src/main/resources/features/F06_Homeslider.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="F07_FollowUS | the four icons for social media facebook, youtube, twitter,RSS" name="user on home page ,click on facebook icon" time="8.41">
+        <system-out><![CDATA[When user click on facebook icon from follow us section.....................passed
+Then creating a new tab and the expected URL is "https://www.facebook.com/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F07_FollowUS | the four icons for social media facebook, youtube, twitter,RSS" name="user on home page ,click on twitter icon" time="8.67">
+        <system-out><![CDATA[When user click on twitter icon from follow us section......................passed
+Then creating a new tab and the expected URL is "https://twitter.com/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F07_FollowUS | the four icons for social media facebook, youtube, twitter,RSS" name="user on home page ,click on RSS icon" time="8.102">
+        <failure message="number of tabs is less than 2 expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When user click on RSS icon from follow us section..........................passed
+Then creating a new tab and the expected URL is "https://demo.nopcommerce.com/nopcommerce-new-release".failed
+
+StackTrace:
+java.lang.AssertionError: number of tabs is less than 2 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.example.stepDefs.D07_followusStepDef.checkFacebookFollowus(D07_followusStepDef.java:72)
+	at ✽.creating a new tab and the expected URL is "https://demo.nopcommerce.com/nopcommerce-new-release"(file:///E:/FrontEndTesting/Java%20Projects/demonopcommerce/src/main/resources/features/F07_FollowUs.feature:18)
+]]></failure>
+    </testcase>
+    <testcase classname="F07_FollowUS | the four icons for social media facebook, youtube, twitter,RSS" name="user on home page ,click on Youtube icon" time="13.902">
+        <system-out><![CDATA[When user click on Youtube icon from follow us section......................passed
+Then creating a new tab and the expected URL is "https://www.youtube.com/user/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_Whishlist | user press on button &lt;3  to add the product in wish list" name="user press on button &lt;3  to add the product in wish list" time="7.896">
+        <system-out><![CDATA[When user press on the wishlist button......................................passed
+Then check green message pop up and content.................................passed
+And refer to link wishlist shown in the message.............................passed
+And check the quantity......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
